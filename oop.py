@@ -2,20 +2,20 @@ class Person:
     def __init__(self,initialAge):
         # Add some more code to run some checks on initialAge
         if initialAge > 0:
-            age = initialAge
+            self.age = initialAge
         else:
-            age = 0
+            self.age = 0
             print('Age is not valid, setting age to 0.')
     def amIOld(self):
         # Do some computations in here and print out the correct statement to the console
-        if age < 13:
+        if self.age < 13:
             print('You are young.')
-        elif age >=13 and age < 18:
+        elif self.age >=13 and self.age < 18:
             print('You are teenager.')
         print('You are old.') 
     def yearPasses(self):
         # Increment the age of the person in here
-        Person.age += 1  # ye wala nhi smjh aarha
+        self.age += 1  # self hota h instance variable k liye ab jis instance se call krogi uski age increment ho jygi
 
 t = int(input())
 for i in range(0,t):
