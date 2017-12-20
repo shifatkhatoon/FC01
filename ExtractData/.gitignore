@@ -1,0 +1,72 @@
+
+# Virtual environment folder #
+######################
+venv/
+venv2/
+demo.py
+py3env/
+
+# Logs #
+######################
+traveldglobe_error.log
+uwsgi.log
+db_dump/
+geckodriver.log
+
+# distribution / packaging #
+######################
+/node_modules/
+development.cfg
+production.cfg
+/.sass-cache/
+/dist/
+/static/css/admin_panel.*
+/static/js/admin_panel.js
+######## whitelisting #######
+!static/css/vendor
+!/static/js/app/angular.js
+config.cfg
+
+
+
+# OS generated files #
+######################
+.DS_Store
+Thumbs.db
+desktop.ini
+task.txt
+
+
+# text editor/IDE files #
+######################
+__pycache__/
+*.pyc
+.idea/
+.idea
+__pycache__/*.pyc
+
+
+#scrapingfiles#
+.scrapecache
+.scrapecache/
+
+google_scraper.db
+config.cfg
+access_token.json
+access_tokens_twitter.ini
+demo.py
+/task.txt.py
+/twittor.ini
+/errorlog.txt
+/d.py
+/venv/
+views/__pycache__
+views/*.pyc
+Tdg_whatsapp/__pycache__
+migrations/__pycache__
+*/__pycache__
+*/*/__pycache__
+*/*/*.pyc
+*/*.pyc
+*/*/*/*.pyc
+sent_msg*.txt
