@@ -1,15 +1,12 @@
 from Find_Blog_data import db
 from Find_Blog_data.models.base import Base
 
-
-
-    
 class Blogs(Base):
-    blog_url = db.Column(db.String(100))
+    blog_url = db.Column(db.String(200))
     blog_title = db.Column(db.String(200))
     blog_Author_Name = db.Column(db.String(50))
-    blog_Posted_Date = db.Column(db.String(10))
-    blog_Content = db.Column(db.String(length=None))
+    blog_Posted_Date = db.Column(db.String(30))
+    blog_Content = db.Column(db.Text)
     blog_imageUrl = db.relationship('Image', backref='Blogs', lazy=True)
     def __init__(self, blog):
         self.blog_url = blog['url']

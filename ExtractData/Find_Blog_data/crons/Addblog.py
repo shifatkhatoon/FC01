@@ -13,4 +13,5 @@ class Addblog(Command):
         for url in urls:
             Object = finddata(url)
             dictionary = Object.getdict()
+            blog_table_add(dictionary)
 
