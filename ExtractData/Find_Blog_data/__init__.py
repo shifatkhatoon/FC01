@@ -11,4 +11,5 @@ db = SQLAlchemy(app)
 ma = Marshmallow(app)
 tdg_tz = timezone(app.config.get('SERVER_TIMEZONE', 'Etc/UTC'))
 from Find_Blog_data.models import BlogTable 
+import Find_Blog_data.views
 db.create_all()
