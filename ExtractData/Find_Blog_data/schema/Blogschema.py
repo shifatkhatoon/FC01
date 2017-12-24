@@ -2,6 +2,7 @@
 from Find_Blog_data import ma
 from Find_Blog_data.models.BlogTable import Image
 
+
 class ImageSchema(ma.Schema):
     class Meta:
         fields = [('blog_ImageUrl')]
